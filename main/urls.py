@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # passa uma var do tipo str pra view
-    path('<int:id>', views.index, name="index"),
+    # passa uma var do tipo int pra view
+    path("<int:id>", views.index, name="index"),
+    path("", views.home, name="home"),
+    path("create/", views.create, name="create"),
 ]
